@@ -3,18 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { SwitchMapComponent } from './operators/switch-map/switch-map.component';
 import { AppRoutingModule } from './app-routing.module';
+import { OperatorsModule } from './operators/operators.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    SwitchMapComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    RouterModule
+    RouterModule,
+    OperatorsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
