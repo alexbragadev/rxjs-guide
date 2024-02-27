@@ -7,12 +7,20 @@ import { SwitchMapComponent } from '../operators/transformation/switch-map/switc
 import { OperatosRoutingModule } from './operatos-routing.module';
 import { RouterModule } from '@angular/router';
 import { operatorComponent } from './operators.component';
+import { SwitchMapToComponent } from './transformation/switch-map-to/switch-map-to.component';
+import { SwitchScanComponent } from './transformation/switch-scan/switch-scan.component';
+import { MapComponent } from './transformation/map/map.component';
+import { ConcatMapComponent } from './transformation/concat-map/concat-map.component';
 
 @NgModule({
   declarations: [
-    SwitchMapComponent,
     transformComponent,
-    operatorComponent
+    operatorComponent,
+    SwitchMapComponent,
+    SwitchMapToComponent,
+    SwitchScanComponent,
+    MapComponent,
+    ConcatMapComponent
   ],
   imports: [
     CommonModule,

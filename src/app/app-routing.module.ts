@@ -4,8 +4,10 @@ import { operatorComponent } from './operators/operators.component';
 
 const appRoutes: Routes = [
   { path: 'operators',  component: operatorComponent},
+  // rota padrão quando o cliente entrar ou se colocar /+vazio
   { path: '',   redirectTo: '/operators', pathMatch: 'full' },
-  // curinga { path: '**', component:  }
+  // rota curinga
+  { path: '**', component: operatorComponent}
 ];
 
 @NgModule({

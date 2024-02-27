@@ -1,0 +1,3 @@
+to use
+
+concatMap -> ex: recuperar detalhes do usuário e seus pedidos de um servidor
