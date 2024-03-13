@@ -11,6 +11,8 @@ import { SwitchMapToComponent } from './transformation/switch-map-to/switch-map-
 import { SwitchScanComponent } from './transformation/switch-scan/switch-scan.component';
 import { MapComponent } from './transformation/map/map.component';
 import { ConcatMapComponent } from './transformation/concat-map/concat-map.component';
+import { PluckComponent } from './transformation/pluck/pluck.component';
+import { ScanComponent } from './transformation/scan/scan.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ConcatMapComponent } from './transformation/concat-map/concat-map.compo
     SwitchMapToComponent,
     SwitchScanComponent,
     MapComponent,
-    ConcatMapComponent
+    ConcatMapComponent,
+    PluckComponent,
+    ScanComponent
   ],
   imports: [
     CommonModule,

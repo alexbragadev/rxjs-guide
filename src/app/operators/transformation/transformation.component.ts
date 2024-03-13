@@ -19,6 +19,12 @@ import { Component, OnInit } from '@angular/core';
         <li>
             <a routerLink="concatMap">ConcatMap</a>
         </li>
+        <li>
+            <a routerLink="pluck">Pluck</a>
+        </li>
+        <li>
+            <a routerLink="scan">Scan</a>
+        </li>
     </ul>
     <router-outlet></router-outlet>
     `,

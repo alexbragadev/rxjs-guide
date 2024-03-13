@@ -7,6 +7,8 @@ import { SwitchMapToComponent } from './transformation/switch-map-to/switch-map-
 import { SwitchScanComponent } from './transformation/switch-scan/switch-scan.component';
 import { MapComponent } from './transformation/map/map.component';
 import { ConcatMapComponent } from './transformation/concat-map/concat-map.component';
+import { PluckComponent } from './transformation/pluck/pluck.component';
+import { ScanComponent } from './transformation/scan/scan.component';
 
 const operatorsRoutes: Routes = [
   { path: 'transform',  component: transformComponent
@@ -16,7 +18,9 @@ const operatorsRoutes: Routes = [
   { path: 'transform/switchMapTo',  component: SwitchMapToComponent},
   { path: 'transform/switchScan',  component: SwitchScanComponent},
   { path: 'transform/map',  component: MapComponent},
-  { path: 'transform/concatMap',  component: ConcatMapComponent}
+  { path: 'transform/concatMap',  component: ConcatMapComponent},
+  { path: 'transform/pluck',  component: PluckComponent},
+  { path: 'transform/scan',  component: ScanComponent}
 ];
 
 @NgModule({
