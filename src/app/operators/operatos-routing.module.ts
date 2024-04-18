@@ -9,8 +9,15 @@ import { MapComponent } from './transformation/map/map.component';
 import { ConcatMapComponent } from './transformation/concat-map/concat-map.component';
 import { PluckComponent } from './transformation/pluck/pluck.component';
 import { ScanComponent } from './transformation/scan/scan.component';
+import { FilteringComponent } from './filtering/filtering.component';
+import { FilterComponent } from './filtering/filter/filter.component';
+import { DebounceTimeComponent } from './filtering/debounce-time/debounce-time.component';
+import { TakeComponent } from './filtering/take/take.component';
+import { DistinctUntilChangedComponent } from './filtering/distinct-until-changed/distinct-until-changed.component';
+import { TakeUntilComponent } from './filtering/take-until/take-until.component';
 
 const operatorsRoutes: Routes = [
+  //transform
   { path: 'transform',  component: transformComponent
     // children: [{path: 'switchMap', component: SwitchMapComponent}]
   },
@@ -20,7 +27,16 @@ const operatorsRoutes: Routes = [
   { path: 'transform/map',  component: MapComponent},
   { path: 'transform/concatMap',  component: ConcatMapComponent},
   { path: 'transform/pluck',  component: PluckComponent},
-  { path: 'transform/scan',  component: ScanComponent}
+  { path: 'transform/scan',  component: ScanComponent},
+
+  // filtering
+  { path: 'filtering',  component: FilteringComponent
+  },
+  { path: 'filtering/filter',  component: FilterComponent},
+  { path: 'filtering/debouceTime',  component: DebounceTimeComponent},
+  { path: 'filtering/take',  component: TakeComponent},
+  { path: 'filtering/distinctUntilChanged',  component: DistinctUntilChangedComponent },
+  { path: 'filtering/takeUntil',  component: TakeUntilComponent }
 ];
 
 @NgModule({
