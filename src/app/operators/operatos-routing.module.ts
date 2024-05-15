@@ -15,6 +15,10 @@ import { DebounceTimeComponent } from './filtering/debounce-time/debounce-time.c
 import { TakeComponent } from './filtering/take/take.component';
 import { DistinctUntilChangedComponent } from './filtering/distinct-until-changed/distinct-until-changed.component';
 import { TakeUntilComponent } from './filtering/take-until/take-until.component';
+import { joinCreationComponent } from './joinCreation/joinCreation.component';
+import { ConcatComponent } from './joinCreation/concat/concat.component';
+import { ForkJoinComponent } from './joinCreation/fork-join/fork-join.component';
+import { MergeComponent } from './joinCreation/merge/merge.component';
 
 const operatorsRoutes: Routes = [
   //transform
@@ -30,13 +34,18 @@ const operatorsRoutes: Routes = [
   { path: 'transform/scan',  component: ScanComponent},
 
   // filtering
-  { path: 'filtering',  component: FilteringComponent
-  },
+  { path: 'filtering',  component: FilteringComponent},
   { path: 'filtering/filter',  component: FilterComponent},
   { path: 'filtering/debouceTime',  component: DebounceTimeComponent},
   { path: 'filtering/take',  component: TakeComponent},
   { path: 'filtering/distinctUntilChanged',  component: DistinctUntilChangedComponent },
-  { path: 'filtering/takeUntil',  component: TakeUntilComponent }
+  { path: 'filtering/takeUntil',  component: TakeUntilComponent },
+
+  //joinCreation
+  { path: 'joinCreation',  component: joinCreationComponent},
+  { path: 'joinCreation/concat',  component: ConcatComponent},
+  { path: 'joinCreation/forkJoin',  component: ForkJoinComponent},
+  { path: 'joinCreation/merge',  component: MergeComponent },
 ];
 
 @NgModule({

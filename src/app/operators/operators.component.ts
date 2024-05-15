@@ -11,6 +11,9 @@ import { of, switchMap } from 'rxjs';
         <li>
             <a [routerLink]="['/filtering']">Filtering Operators</a>
         </li>
+        <li>
+            <a [routerLink]="['/joinCreation']">Join Creation</a>
+        </li>
     </ul>
     <router-outlet></router-outlet>
     `,

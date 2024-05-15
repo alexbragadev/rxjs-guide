@@ -14,6 +14,7 @@ import { ConcatMapComponent } from './transformation/concat-map/concat-map.compo
 import { PluckComponent } from './transformation/pluck/pluck.component';
 import { ScanComponent } from './transformation/scan/scan.component';
 import { FilteringModule } from './filtering/filtering.module';
+import { JoinCreationModule } from './joinCreation/join-creation.module';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { FilteringModule } from './filtering/filtering.module';
   imports: [
     CommonModule,
     FilteringModule,
+    JoinCreationModule,
     RouterModule,
     OperatosRoutingModule
   ]
