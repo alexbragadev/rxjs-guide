@@ -14,6 +14,9 @@ import { of, switchMap } from 'rxjs';
         <li>
             <a [routerLink]="['/joinCreation']">Join Creation</a>
         </li>
+        <li>
+            <a [routerLink]="['/errorHandling']">Error Handling</a>
+        </li>
     </ul>
     <router-outlet></router-outlet>
     `,

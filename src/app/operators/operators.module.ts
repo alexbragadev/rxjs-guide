@@ -15,6 +15,7 @@ import { PluckComponent } from './transformation/pluck/pluck.component';
 import { ScanComponent } from './transformation/scan/scan.component';
 import { FilteringModule } from './filtering/filtering.module';
 import { JoinCreationModule } from './joinCreation/join-creation.module';
+import { ErrorHandlingModule } from './error-handling/error-handling.module';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { JoinCreationModule } from './joinCreation/join-creation.module';
     CommonModule,
     FilteringModule,
     JoinCreationModule,
+    ErrorHandlingModule,
     RouterModule,
     OperatosRoutingModule
   ]

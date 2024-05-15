@@ -19,6 +19,9 @@ import { joinCreationComponent } from './joinCreation/joinCreation.component';
 import { ConcatComponent } from './joinCreation/concat/concat.component';
 import { ForkJoinComponent } from './joinCreation/fork-join/fork-join.component';
 import { MergeComponent } from './joinCreation/merge/merge.component';
+import { ErrorHandlingComponent } from './error-handling/error-handling.component';
+import { CatchErrorComponent } from './error-handling/catch-error/catch-error.component';
+import { RetryComponent } from './error-handling/retry/retry.component';
 
 const operatorsRoutes: Routes = [
   //transform
@@ -46,6 +49,11 @@ const operatorsRoutes: Routes = [
   { path: 'joinCreation/concat',  component: ConcatComponent},
   { path: 'joinCreation/forkJoin',  component: ForkJoinComponent},
   { path: 'joinCreation/merge',  component: MergeComponent },
+
+  //errorHandling
+  { path: 'errorHandling',  component: ErrorHandlingComponent},
+  { path: 'errorHandling/catchError',  component: CatchErrorComponent},
+  { path: 'errorHandling/retry',  component: RetryComponent},
 ];
 
 @NgModule({
