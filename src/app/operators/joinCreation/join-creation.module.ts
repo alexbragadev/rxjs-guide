@@ -5,6 +5,7 @@ import { joinCreationComponent } from './joinCreation.component';
 import { ConcatComponent } from './concat/concat.component';
 import { ForkJoinComponent } from './fork-join/fork-join.component';
 import { MergeComponent } from './merge/merge.component';
+import { StartWithComponent } from './start-with/start-with.component';
 
 
 
@@ -13,7 +14,8 @@ import { MergeComponent } from './merge/merge.component';
     joinCreationComponent,
     ConcatComponent,
     ForkJoinComponent,
-    MergeComponent
+    MergeComponent,
+    StartWithComponent
   ],
   imports: [
     CommonModule,

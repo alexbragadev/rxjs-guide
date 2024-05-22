@@ -16,6 +16,7 @@ import { ScanComponent } from './transformation/scan/scan.component';
 import { FilteringModule } from './filtering/filtering.module';
 import { JoinCreationModule } from './joinCreation/join-creation.module';
 import { ErrorHandlingModule } from './error-handling/error-handling.module';
+import { UtilityModule } from './utility-operators/utility.module';
 
 @NgModule({
   declarations: [
@@ -27,13 +28,14 @@ import { ErrorHandlingModule } from './error-handling/error-handling.module';
     MapComponent,
     ConcatMapComponent,
     PluckComponent,
-    ScanComponent
+    ScanComponent,
   ],
   imports: [
     CommonModule,
     FilteringModule,
     JoinCreationModule,
     ErrorHandlingModule,
+    UtilityModule,
     RouterModule,
     OperatosRoutingModule
   ]

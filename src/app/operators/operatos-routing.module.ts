@@ -22,6 +22,14 @@ import { MergeComponent } from './joinCreation/merge/merge.component';
 import { ErrorHandlingComponent } from './error-handling/error-handling.component';
 import { CatchErrorComponent } from './error-handling/catch-error/catch-error.component';
 import { RetryComponent } from './error-handling/retry/retry.component';
+import { StartWithComponent } from './joinCreation/start-with/start-with.component';
+import { UtilityComponent } from './utility-operators/utility.component';
+import { TapComponent } from './utility-operators/tap/tap.component';
+import { DelayComponent } from './utility-operators/delay/delay.component';
+import { TimeoutComponent } from './utility-operators/timeout/timeout.component';
+import { TimeInterval } from 'rxjs/internal/operators/timeInterval';
+import { TimestampComponent } from './utility-operators/timestamp/timestamp.component';
+import { TimeIntervalComponent } from './utility-operators/time-interval/time-interval.component';
 
 const operatorsRoutes: Routes = [
   //transform
@@ -49,11 +57,18 @@ const operatorsRoutes: Routes = [
   { path: 'joinCreation/concat',  component: ConcatComponent},
   { path: 'joinCreation/forkJoin',  component: ForkJoinComponent},
   { path: 'joinCreation/merge',  component: MergeComponent },
-
+  { path: 'joinCreation/start-with',  component: StartWithComponent },
   //errorHandling
   { path: 'errorHandling',  component: ErrorHandlingComponent},
   { path: 'errorHandling/catchError',  component: CatchErrorComponent},
   { path: 'errorHandling/retry',  component: RetryComponent},
+  //utility operators
+  { path: 'utility',  component: UtilityComponent},
+  { path: 'utility/tap',  component: TapComponent},
+  { path: 'utility/delay',  component: DelayComponent},
+  { path: 'utility/timestamp',  component: TimestampComponent},
+  { path: 'utility/timeInterval',  component: TimeIntervalComponent},
+  { path: 'utility/timeout',  component: TimeoutComponent},
 ];
 
 @NgModule({

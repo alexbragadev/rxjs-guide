@@ -13,6 +13,9 @@ import { Component, OnInit } from '@angular/core';
         <li>
             <a routerLink="merge">Merge</a>
         </li>
+        <li>
+            <a routerLink="start-with">Start With</a>
+        </li>
     </ul>
     <router-outlet></router-outlet>
     `,
