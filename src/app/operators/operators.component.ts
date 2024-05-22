@@ -19,6 +19,12 @@ import { of, switchMap } from 'rxjs';
       <li>
         <a [routerLink]="['/utility']">Utility</a>
       </li>
+      <li>
+        <a [routerLink]="['/creation']">Creation</a>
+      </li>
+      <li>
+        <a [routerLink]="['/conditional']">Conditional</a>
+      </li>
     </ul>
     <router-outlet></router-outlet> `,
   styles: [],

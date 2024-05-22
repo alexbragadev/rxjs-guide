@@ -30,6 +30,14 @@ import { TimeoutComponent } from './utility-operators/timeout/timeout.component'
 import { TimeInterval } from 'rxjs/internal/operators/timeInterval';
 import { TimestampComponent } from './utility-operators/timestamp/timestamp.component';
 import { TimeIntervalComponent } from './utility-operators/time-interval/time-interval.component';
+import { CreationComponent } from './creation/creation.component';
+import { OfComponent } from './creation/of/of.component';
+import { AjaxComponent } from './creation/ajax/ajax.component';
+import { DeferComponent } from './creation/defer/defer.component';
+import { FromComponent } from './creation/from/from.component';
+import { IntervalComponent } from './creation/interval/interval.component';
+import { ConditionalComponent } from './conditional/conditional.component';
+import { FindComponent } from './conditional/find/find.component';
 
 const operatorsRoutes: Routes = [
   //transform
@@ -69,6 +77,16 @@ const operatorsRoutes: Routes = [
   { path: 'utility/timestamp',  component: TimestampComponent},
   { path: 'utility/timeInterval',  component: TimeIntervalComponent},
   { path: 'utility/timeout',  component: TimeoutComponent},
+  //creation operators
+  { path: 'creation',  component: CreationComponent},
+  { path: 'creation/of',  component: OfComponent},
+  { path: 'creation/ajax',  component: AjaxComponent},
+  { path: 'creation/defer',  component: DeferComponent},
+  { path: 'creation/from',  component: FromComponent},
+  { path: 'creation/interval',  component: IntervalComponent},
+  //conditional operators
+  { path: 'conditional',  component: ConditionalComponent},
+  { path: 'conditional/find',  component: FindComponent},
 ];
 
 @NgModule({

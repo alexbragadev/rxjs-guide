@@ -17,6 +17,8 @@ import { FilteringModule } from './filtering/filtering.module';
 import { JoinCreationModule } from './joinCreation/join-creation.module';
 import { ErrorHandlingModule } from './error-handling/error-handling.module';
 import { UtilityModule } from './utility-operators/utility.module';
+import { CreationModule } from './creation/creation.module';
+import { ConditionalModule } from './conditional/conditional.module';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { UtilityModule } from './utility-operators/utility.module';
     JoinCreationModule,
     ErrorHandlingModule,
     UtilityModule,
+    CreationModule,
+    ConditionalModule,
     RouterModule,
     OperatosRoutingModule
   ]
