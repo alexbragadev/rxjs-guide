@@ -38,6 +38,11 @@ import { FromComponent } from './creation/from/from.component';
 import { IntervalComponent } from './creation/interval/interval.component';
 import { ConditionalComponent } from './conditional/conditional.component';
 import { FindComponent } from './conditional/find/find.component';
+import { MathematicalComponent } from './mathematical/mathematical.component';
+import { CountComponent } from './mathematical/count/count.component';
+import { MaxComponent } from './mathematical/max/max.component';
+import { MinComponent } from './mathematical/min/min.component';
+import { ReduceComponent } from './mathematical/reduce/reduce.component';
 
 const operatorsRoutes: Routes = [
   //transform
@@ -87,6 +92,12 @@ const operatorsRoutes: Routes = [
   //conditional operators
   { path: 'conditional',  component: ConditionalComponent},
   { path: 'conditional/find',  component: FindComponent},
+  //mathematical operators
+  { path: 'mathematical',  component: MathematicalComponent},
+  { path: 'mathematical/count',  component: CountComponent},
+  { path: 'mathematical/max',  component: MaxComponent},
+  { path: 'mathematical/min',  component: MinComponent},
+  { path: 'mathematical/reduce',  component: ReduceComponent},
 ];
 
 @NgModule({

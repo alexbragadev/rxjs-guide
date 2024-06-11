@@ -19,6 +19,7 @@ import { ErrorHandlingModule } from './error-handling/error-handling.module';
 import { UtilityModule } from './utility-operators/utility.module';
 import { CreationModule } from './creation/creation.module';
 import { ConditionalModule } from './conditional/conditional.module';
+import { MathematicalModule } from './mathematical/mathematical.module';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { ConditionalModule } from './conditional/conditional.module';
     ErrorHandlingModule,
     UtilityModule,
     CreationModule,
+    MathematicalModule,
     ConditionalModule,
     RouterModule,
     OperatosRoutingModule

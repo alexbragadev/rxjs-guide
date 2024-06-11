@@ -25,6 +25,9 @@ import { of, switchMap } from 'rxjs';
       <li>
         <a [routerLink]="['/conditional']">Conditional</a>
       </li>
+      <li>
+        <a [routerLink]="['/mathematical']">Mathematical</a>
+      </li>
     </ul>
     <router-outlet></router-outlet> `,
   styles: [],
